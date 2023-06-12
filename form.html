@@ -12,7 +12,8 @@
     <form action="" method="post">
         <label for="nm">Name </label><input type="text" name="fname" id="nm" value="Enter name">
         <br><br>
-        <label for="pw">Password </label><input type="password" name="password" id="pw" placeholder="Enter your password ">
+        <label for="pw">Password </label><input type="password" name="password" id="pw"
+            placeholder="Enter your password ">
         <br><br>
         <label for="fname">Gender </label>
         <input type="radio" name="Gender" id="m"><label for="m">Male</label>
@@ -26,6 +27,44 @@
         <br><br>
         <label for="msg">Message</label>
         <textarea name="" id="msg" cols="30" rows="10">Enter your messages</textarea>
+        <br><br>
+        <!-- form tag part II -->
+        <label for="cntry">Country</label>
+        <select name="opt" size="3" multiple id="">
+            <option value="pak">Pakistan</option>
+            <option value="ind" selected>India</option>
+            <option value="npl">Nepal</option>
+            <option value="sl">Sri lanka</option>
+        </select>
+        <br><br>
+        <label for="">Cars</label>
+        <select name="" id="">
+            <optgroup label="Toyoto">
+                <option value="">Innova</option>
+                <option value="">Etios</option>
+                <option value="">Fortuner</option>
+            </optgroup>
+            <br />
+            <optgroup label="Renault">
+                <option value="">Kwid</option>
+                <option value="">Duater</option>
+                <option value="">Captur</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="">Cars</label>
+        <input type="text" list="cars">
+        <datalist id="cars">
+            <option value="Innova">
+            <option value="Kwid">
+            <option value="Etios">
+            <option value="Duater">
+
+        </datalist>
+        <br><br>
+        <label for="file">Upload File</label>
+        <input type="file" name="" accept="image/*" id="file">
+        
 
     </form>
 </body>
